@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Home Page</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "stylesheet" href="style.css">
+	</head>
+	<body onload="init()">
+		<div class="menu-bar">
+			<h3> Open Movie Database </h3>
+			<label for="movie_id" style="font-size:15px">Movie ID:</label>
+			<input type="text" id="movie-id">
+			<button id = "get_movie">Submit</button>
+		</div>
+		<div class="movie-info" id="movie-info-box">
+			<h1>Movie Info</h1></br></br>
+			<p id="movie-title">Movie Title:</p>
+			<br>
+			<p id="movie-year">Movie Release Year:</p>
+			<br>
+			<p id="movie-runtime">Movie Runtime:</p>
+			<br>
+			<p id="movie-cast">Movie Cast:</p>
+		</div>
+		<div class="movie-info">
+			<h1>Add Review</h1></br></br>
+			<p>
+        <label for="name">Name:</label>
+        <input id = "rName" type="text" name="Name" id="name"></br></br>
+				<label for="quantity">Score(1-10):</label>
+  			<input id = "rRating" type="number" id="score" name="score" min="1" max="10" step="1" value="10"></br></br>
+  			<label for="name" class="review">Review:</label>
+        <input id = "rReview" type="text" name="review" style="height:80px; width:200px;"></br></br>
+				<button id = "add-review">Add Review</button>
+    	</p>
+		</div>
+		<div class = "reviews" id = "new-reviews">
+			<h1>Reviews</h1></br></br>
+		</div>
+		<script src="movie.js"></script>
+	</body>
+</html>
